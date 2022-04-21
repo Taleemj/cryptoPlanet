@@ -26,34 +26,28 @@ const Homepage = () => {
       </Title>
       <Row>
         <Col span={12}>
-          <Statistic
-            title="Total crptocurrencies"
-            value={millify(cryptoData?.total)}
-          />
+          <Statistic title="Total crptocurrencies" value={cryptoData?.total} />
         </Col>
         <Col span={12}>
           <Statistic
             title="Total exchanges"
-            value={millify(cryptoData?.totalExchanges)}
+            value={cryptoData?.totalExchanges}
           />
         </Col>
         <Col span={12}>
           <Statistic
             title="Total marketcap"
-            value={millify(cryptoData?.totalMarketCap)}
+            value={cryptoData?.totalMarketCap}
           />
         </Col>
         <Col span={12}>
           <Statistic
             title="Total 24h Volume"
-            value={millify(cryptoData?.total24hVolume)}
+            value={cryptoData?.total24hVolume}
           />
         </Col>
         <Col span={12}>
-          <Statistic
-            title="Total markets"
-            value={millify(cryptoData?.totalMarkets)}
-          />
+          <Statistic title="Total markets" value={cryptoData?.totalMarkets} />
         </Col>
       </Row>
       <div className="home-heading-container">
